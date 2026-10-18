@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "genome_build": "GRCh38",
+  "reference_fasta": "/references/GRCh38.fa",
+  "reference_sha256": "REPLACE_WITH_SHA256_OF_YOUR_EXACT_FASTA",
+  "known_sites_vcf": [
+    {
+      "path": "/references/known-sites.GRCh38.vcf.gz",
+      "sha256": "REPLACE_WITH_SHA256_IF_USING_HAPLOTYPECALLER"
+    }
+  ]
+}

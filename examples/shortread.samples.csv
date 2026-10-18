@@ -1,0 +1,3 @@
+sample,assay,lane,fastq_1,fastq_2,target_bed
+HG002,WGS,L001,/data/HG002_R1.fastq.gz,/data/HG002_R2.fastq.gz,
+HG003,WES,L001,/data/HG003_R1.fastq.gz,/data/HG003_R2.fastq.gz,/references/capture-kit.bed

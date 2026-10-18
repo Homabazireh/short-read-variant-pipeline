@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "comparison_warning": "Runs use different inputs/territories; these regional tests do not establish whole-genome performance or platform rankings.",
+  "runs": [
+    {
+      "platform": "Illumina_WGS",
+      "region": "chr20:10000001-10200000",
+      "scope": "public HG003 regional integration/regression benchmark, not whole-genome or clinical validation",
+      "truth_release": "GIAB HG003 GRCh38 v4.2.1",
+      "truth_vcf_sha256": "a4f8fefa826f8d2c9457eacf6f4b2f6bfa29daef429d570ce04254c5e7b1121e",
+      "truth_bed_sha256": "652afd3046705af3200f9c87c255fef11bb212dd76c75a19999c9b2df8a3180c",
+      "query_vcf_sha256": "493acc22f8ceb97f4519d7c75a82079975cfd89593eabe70c00f6cd2a901af20",
+      "reference_sha256": "9cce8b926416dd96b152deea85188495b75f7ac8d634cc723a017067be8702b7",
+      "versions": {
+        "bcftools": "1.22",
+        "vep": "116.0",
+        "happy": "0.3.12",
+        "rtg_tools": "3.10.1",
+        "truvari": "5.3.0"
+      },
+      "containers": {
+        "bcftools": "quay.io/biocontainers/bcftools@sha256:065115d2fbdcba9b9a9d360fe9f024ba829de2e64309a637a274ed47e0af17db",
+        "vep": "ensemblorg/ensembl-vep@sha256:f354dd8d09073e4d943acbbd02f5eb234a9d9e9d444371c1c349910f2123de11",
+        "happy": "jmcdani20/hap.py@sha256:0812d37e7210011e407914deb3da2094ec8258077b21d3211e694e5ca303b489",
+        "truvari": "quay.io/biocontainers/truvari@sha256:022be7a2dfe5decf1aff8d007a914f56ed68d0bc224888e1764820922bc11935"
+      },
+      "matching": {
+        "engine": "vcfeval",
+        "confidence_mode": "truth_intersection_evaluation_regions",
+        "truth_trimming": false,
+        "adjust_conf_regions": true
+      },
+      "confidence_adjustment_execution": {
+        "mode": "hap.py 0.3.12 implicit default",
+        "equivalent_explicit_flag": "--adjust-conf-regions",
+        "tool_rerun_for_reporting_change": false
+      },
+      "elapsed_seconds": 235.33177032507956,
+      "cpus": 4,
+      "memory_gb": 16,
+      "evaluation_regions_sha256": "2c22770839c5973fb6315a89f666916a81695d6afcc00ea56c772fa169640288",
+      "requested_input_bed_bases": 194051,
+      "native_adjusted_confident_bases": 194597,
+      "metrics_csv_sha256": "73ea8c895e630e7b8893b7401aed53e7f1e2de2fbdd502444598576975205f84",
+      "report_regeneration": null,
+      "report_postprocessing": {
+        "change": "Export requested BED bases and native adjusted confidence bases separately",
+        "script_sha256": "ea61f9224856e12d33f19c2dcb47d1c029e6c9653192dca3b6bd7fb21127cd5f"
+      },
+      "training_overlap": "not audited; no independent accuracy claim"
+    },
+    {
+      "platform": "Illumina_WES",
+      "region": "unpadded IDT capture targets intersected with chr20:10000001-10200000",
+      "scope": "public HG003 regional integration/regression benchmark, not whole-genome or clinical validation",
+      "truth_release": "GIAB HG003 GRCh38 v4.2.1",
+      "truth_vcf_sha256": "a4f8fefa826f8d2c9457eacf6f4b2f6bfa29daef429d570ce04254c5e7b1121e",
+      "truth_bed_sha256": "652afd3046705af3200f9c87c255fef11bb212dd76c75a19999c9b2df8a3180c",
+      "query_vcf_sha256": "8ae0033c5013d73a76174845e10fe51f9de03c013639fa85b3f7ae9f12f561e9",
+      "reference_sha256": "9cce8b926416dd96b152deea85188495b75f7ac8d634cc723a017067be8702b7",
+      "versions": {
+        "bcftools": "1.22",
+        "vep": "116.0",
+        "happy": "0.3.12",
+        "rtg_tools": "3.10.1",
+        "truvari": "5.3.0"
+      },
+      "containers": {
+        "bcftools": "quay.io/biocontainers/bcftools@sha256:065115d2fbdcba9b9a9d360fe9f024ba829de2e64309a637a274ed47e0af17db",
+        "vep": "ensemblorg/ensembl-vep@sha256:f354dd8d09073e4d943acbbd02f5eb234a9d9e9d444371c1c349910f2123de11",
+        "happy": "jmcdani20/hap.py@sha256:0812d37e7210011e407914deb3da2094ec8258077b21d3211e694e5ca303b489",
+        "truvari": "quay.io/biocontainers/truvari@sha256:022be7a2dfe5decf1aff8d007a914f56ed68d0bc224888e1764820922bc11935"
+      },
+      "matching": {
+        "engine": "vcfeval",
+        "confidence_mode": "truth_intersection_evaluation_regions",
+        "truth_trimming": false,
+        "adjust_conf_regions": true
+      },
+      "confidence_adjustment_execution": {
+        "mode": "hap.py 0.3.12 implicit default",
+        "equivalent_explicit_flag": "--adjust-conf-regions",
+        "tool_rerun_for_reporting_change": false
+      },
+      "elapsed_seconds": 234.72939482703805,
+      "cpus": 4,
+      "memory_gb": 16,
+      "evaluation_regions_sha256": "947380eff65c5cdccd0540290fb3bf2f205d008063928d7c4a2b6cd43162c2f7",
+      "requested_input_bed_bases": 2331,
+      "native_adjusted_confident_bases": 2333,
+      "metrics_csv_sha256": "beca197e8db3d19b5c14d2a78c27aef960f68c23fc3cd997371b71aaa56dfd0c",
+      "report_regeneration": null,
+      "report_postprocessing": {
+        "change": "Export requested BED bases and native adjusted confidence bases separately",
+        "script_sha256": "ea61f9224856e12d33f19c2dcb47d1c029e6c9653192dca3b6bd7fb21127cd5f"
+      },
+      "training_overlap": "not audited; no independent accuracy claim"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+name: Validate
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Check Python syntax
+        run: python -m compileall -q scripts tests
+      - name: Test validation and reporting
+        run: python -m unittest discover -s tests -v
+      - name: Check launchers
+        run: |
+          bin/run --help
+          bin/annotate --help
+          bin/benchmark --help
+          bin/doctor --help
+  nextflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Install pinned Nextflow
+        run: bash scripts/install_nextflow.sh
+      - name: Compile local DSL2 workflows without executing tasks
+        run: |
+          export PATH="$PWD/.tools:$PATH"
+          python scripts/check_nextflow.py

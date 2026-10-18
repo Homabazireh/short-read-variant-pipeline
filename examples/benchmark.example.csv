@@ -1,0 +1,4 @@
+sample,label,vcf,variant_type,truth_vcf,truth_bed,evaluation_regions,truth_sample,truth_release,truth_release_notes,stratifications
+HG002,pipeline,/data/HG002.small.vcf.gz,small,/truth/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz,/truth/HG002_GRCh38_1_22_v4.2.1_benchmark.bed,/data/evaluated_regions.bed,HG002,GIAB_v4.2.1,https://github.com/genome-in-a-bottle/giab_latest_release,
+HG002,DRAGEN,/data/HG002.dragen.vcf.gz,small,/truth/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz,/truth/HG002_GRCh38_1_22_v4.2.1_benchmark.bed,/data/evaluated_regions.bed,HG002,GIAB_v4.2.1,https://github.com/genome-in-a-bottle/giab_latest_release,
+HG002,MegSAP,/data/HG002.megSAP.vcf.gz,small,/truth/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz,/truth/HG002_GRCh38_1_22_v4.2.1_benchmark.bed,/data/evaluated_regions.bed,HG002,GIAB_v4.2.1,https://github.com/genome-in-a-bottle/giab_latest_release,

@@ -1,0 +1,4 @@
+platform,region,sample,label,type,filter,truth_tp,query_tp,fn,fp,query_unassessed,precision,recall,f1,genotype_errors,requested_input_bed_bases,native_adjusted_confident_bases
+Illumina_WGS,chr20:10000001-10200000,HG003,deepvariant,INDEL,PASS,62,68,0,0,41,1.0,1.0,1.0,0,194051,194597
+Illumina_WGS,chr20:10000001-10200000,HG003,deepvariant,SNP,PASS,389,389,0,0,36,1.0,1.0,1.0,0,194051,194597
+Illumina_WES,unpadded IDT capture targets intersected with chr20:10000001-10200000,HG003,deepvariant,SNP,PASS,2,2,0,0,3,1.0,1.0,1.0,0,2331,2333

@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-18T15:07:57.199223+00:00",
+  "validation_kind": "regional integration with complete GRCh38 no-alt reference; not full-genome accuracy benchmarking",
+  "sample": "HG003",
+  "scope": "chr20:10000000-10200000 zero-based half-open; WES additionally intersected with unpadded autosomal IDT capture targets",
+  "full_genome_analysis": false,
+  "requested_cpus": 8,
+  "requested_memory_gb": 64,
+  "execution_profile": "apptainer",
+  "executor": "local",
+  "resource_note": "Local requests do not enforce process RSS; measured BWA-MEM2 indexing exceeded 64 GB. Published default increased to 96 GB.",
+  "current_launcher_sha256": "280fe5815d0e292c5cc9331ac717f7bbfb24685aa95e5341252d6731b35e1195",
+  "current_sv_workflow_sha256": "17ebb6e5eb1fbfcd75fb18ed6db2c320120ae366af3df9c0213b1ab73e2c6aa9",
+  "experiments": [
+    {
+      "assay": "WGS",
+      "status": "complete",
+      "started_at_utc": "2026-10-18T14:38:01.526938+00:00",
+      "completed_at_utc": "2026-10-18T14:57:27.930799+00:00",
+      "wall_seconds_including_index_and_container_setup": 1166.404,
+      "completed_tasks": 17,
+      "input_read_pairs": 40170,
+      "retained_read_pairs": 39745,
+      "original_variant_records": 641,
+      "original_vcf_sha256": "493acc22f8ceb97f4519d7c75a82079975cfd89593eabe70c00f6cd2a901af20",
+      "original_vcf_index_sha256": "ac339da0493fbfc651319a1e8162ca31df3afa370acc33f0da2b5ce5abbf868d",
+      "reference_fasta_sha256": "9cce8b926416dd96b152deea85188495b75f7ac8d634cc723a017067be8702b7",
+      "reference_fai_sha256": "502a1b8fb73ccd53285c28a0f12df90c818b4fe3de1e862ef47c593ef1a0a4b4",
+      "sarek_release": "3.10.0",
+      "sarek_commit": "8ccac7ad37b05dd792447763bf9671b719824587",
+      "nextflow_version": "25.10.4",
+      "executed_launcher_sha256": "87881ace81254eb20951ffdaee3e2b00a37340f6817b2f3376b91438b231427f",
+      "executed_sv_workflow_sha256": "4b374385f8cf7bdbbd9884364f7b51f1984cccffbc69e37be78badd42cc11022",
+      "analysis_fingerprint": "2a2d59234684e6318f75bb803c054f97816f7e18a21bf0e35094a1143daadc9f",
+      "trace_sha256": "015c9a9135e48a29806b466c63e11dd857195eabd511b90b675cb4c1a307bc3d",
+      "index_wall_seconds": 923.0,
+      "index_peak_rss_reported": "69.3 GB",
+      "index_peak_rss_bytes_approx": 74410308403,
+      "deepvariant_realtime_seconds": 33.8,
+      "deepvariant_peak_rss_reported": "7 GB",
+      "tool_versions": {
+        "BCFTOOLS_STATS": {
+          "bcftools": "1.23.1"
+        },
+        "BWAMEM2_INDEX": {
+          "bwamem2": "2.2.1"
+        },
+        "BWAMEM2_MEM": {
+          "bwamem2": "2.2.1",
+          "samtools": "1.22.1"
+        },
+        "CREATE_INTERVALS_BED": {
+          "gawk": "5.3.0"
+        },
+        "DEEPVARIANT_RUNDEEPVARIANT": {
+          "deepvariant": "1.10.0"
+        },
+        "FASTP": {
+          "fastp": "1.1.0"
+        },
+        "FASTQC": {
+          "fastqc": "0.12.1"
+        },
+        "GATK4_CREATESEQUENCEDICTIONARY": {
+          "gatk4": "4.6.2.0"
+        },
+        "GATK4_MARKDUPLICATES": {
+          "gatk4": "4.6.2.0",
+          "samtools": "1.21"
+        },
+        "MOSDEPTH": {
+          "gzip": "1.14",
+          "mosdepth": "0.3.14"
+        },
+        "SAMTOOLS_STATS": {
+          "samtools": "1.24"
+        },
+        "TABIX_BGZIPTABIX_INTERVAL_COMBINED": {
+          "htslib": "1.24",
+          "xz": "5.8.3"
+        },
+        "TABIX_BGZIPTABIX_INTERVAL_SPLIT": {
+          "htslib": "1.24",
+          "xz": "5.8.3"
+        },
+        "VCFTOOLS_SUMMARY": {
+          "vcftools": "0.1.17"
+        },
+        "VCFTOOLS_TSTV_COUNT": {
+          "vcftools": "0.1.17"
+        },
+        "VCFTOOLS_TSTV_QUAL": {
+          "vcftools": "0.1.17"
+        },
+        "Workflow": {
+          "nf-core/sarek": "v3.10.0",
+          "Nextflow": "25.10.4"
+        },
+        "MULTIQC": {
+          "multiqc": "1.35"
+        }
+      },
+      "tool_versions_source_sha256": "1aebba6d509845989d88a065070c07b166221ad1861fdb32c91bd00e860cd67b",
+      "regions": {
+        "calling": {
+          "sha256": "2c22770839c5973fb6315a89f666916a81695d6afcc00ea56c772fa169640288",
+          "interval_count": 1,
+          "bases": 200000,
+          "bed": [
+            [
+              "chr20",
+              "10000000",
+              "10200000"
+            ]
+          ]
+        },
+        "reporting": {
+          "sha256": "2c22770839c5973fb6315a89f666916a81695d6afcc00ea56c772fa169640288",
+          "interval_count": 1,
+          "bases": 200000,
+          "bed": [
+            [
+              "chr20",
+              "10000000",
+              "10200000"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "assay": "WES",
+      "status": "complete",
+      "started_at_utc": "2026-10-18T14:40:05.768561+00:00",
+      "completed_at_utc": "2026-10-18T14:57:42.952916+00:00",
+      "wall_seconds_including_index_and_container_setup": 1057.184,
+      "completed_tasks": 17,
+      "input_read_pairs": 1485,
+      "retained_read_pairs": 1481,
+      "original_variant_records": 5,
+      "original_vcf_sha256": "8ae0033c5013d73a76174845e10fe51f9de03c013639fa85b3f7ae9f12f561e9",
+      "original_vcf_index_sha256": "0f665ea9d005135d29e7bb57e92964fb12b36bd1b36dee6304e3dd186b83e21f",
+      "reference_fasta_sha256": "9cce8b926416dd96b152deea85188495b75f7ac8d634cc723a017067be8702b7",
+      "reference_fai_sha256": "502a1b8fb73ccd53285c28a0f12df90c818b4fe3de1e862ef47c593ef1a0a4b4",
+      "sarek_release": "3.10.0",
+      "sarek_commit": "8ccac7ad37b05dd792447763bf9671b719824587",
+      "nextflow_version": "25.10.4",
+      "executed_launcher_sha256": "87881ace81254eb20951ffdaee3e2b00a37340f6817b2f3376b91438b231427f",
+      "executed_sv_workflow_sha256": "4b374385f8cf7bdbbd9884364f7b51f1984cccffbc69e37be78badd42cc11022",
+      "analysis_fingerprint": "02951b1bb8345f5455be0d9623c14a147d693f5bc2e18edd122077bfb97bb611",
+      "trace_sha256": "7ca67cc57eeb148a68ca8293503076ab3b99eb0dc59c44326595cd648c47742f",
+      "index_wall_seconds": 917.0,
+      "index_peak_rss_reported": "69.3 GB",
+      "index_peak_rss_bytes_approx": 74410308403,
+      "deepvariant_realtime_seconds": 30.8,
+      "deepvariant_peak_rss_reported": "5.5 GB",
+      "tool_versions": {
+        "BCFTOOLS_STATS": {
+          "bcftools": "1.23.1"
+        },
+        "BWAMEM2_INDEX": {
+          "bwamem2": "2.2.1"
+        },
+        "BWAMEM2_MEM": {
+          "bwamem2": "2.2.1",
+          "samtools": "1.22.1"
+        },
+        "CREATE_INTERVALS_BED": {
+          "gawk": "5.3.0"
+        },
+        "DEEPVARIANT_RUNDEEPVARIANT": {
+          "deepvariant": "1.10.0"
+        },
+        "FASTP": {
+          "fastp": "1.1.0"
+        },
+        "FASTQC": {
+          "fastqc": "0.12.1"
+        },
+        "GATK4_CREATESEQUENCEDICTIONARY": {
+          "gatk4": "4.6.2.0"
+        },
+        "GATK4_MARKDUPLICATES": {
+          "gatk4": "4.6.2.0",
+          "samtools": "1.21"
+        },
+        "MOSDEPTH": {
+          "gzip": "1.14",
+          "mosdepth": "0.3.14"
+        },
+        "SAMTOOLS_STATS": {
+          "samtools": "1.24"
+        },
+        "TABIX_BGZIPTABIX_INTERVAL_COMBINED": {
+          "htslib": "1.24",
+          "xz": "5.8.3"
+        },
+        "TABIX_BGZIPTABIX_INTERVAL_SPLIT": {
+          "htslib": "1.24",
+          "xz": "5.8.3"
+        },
+        "VCFTOOLS_SUMMARY": {
+          "vcftools": "0.1.17"
+        },
+        "VCFTOOLS_TSTV_COUNT": {
+          "vcftools": "0.1.17"
+        },
+        "VCFTOOLS_TSTV_QUAL": {
+          "vcftools": "0.1.17"
+        },
+        "Workflow": {
+          "nf-core/sarek": "v3.10.0",
+          "Nextflow": "25.10.4"
+        },
+        "MULTIQC": {
+          "multiqc": "1.35"
+        }
+      },
+      "tool_versions_source_sha256": "1aebba6d509845989d88a065070c07b166221ad1861fdb32c91bd00e860cd67b",
+      "regions": {
+        "calling": {
+          "sha256": "f8f6b3fd556812b4a502a2ae00028837c9d6aec9a6c67053e90657f9c417bee2",
+          "interval_count": 9,
+          "bases": 4131,
+          "bed": [
+            [
+              "chr20",
+              "10038201",
+              "10038747"
+            ],
+            [
+              "chr20",
+              "10043021",
+              "10043421"
+            ],
+            [
+              "chr20",
+              "10044293",
+              "10044643"
+            ],
+            [
+              "chr20",
+              "10045473",
+              "10045797"
+            ],
+            [
+              "chr20",
+              "10049289",
+              "10050312"
+            ],
+            [
+              "chr20",
+              "10051562",
+              "10051989"
+            ],
+            [
+              "chr20",
+              "10053011",
+              "10053375"
+            ],
+            [
+              "chr20",
+              "10054361",
+              "10054699"
+            ],
+            [
+              "chr20",
+              "10055401",
+              "10055760"
+            ]
+          ]
+        },
+        "reporting": {
+          "sha256": "947380eff65c5cdccd0540290fb3bf2f205d008063928d7c4a2b6cd43162c2f7",
+          "interval_count": 9,
+          "bases": 2331,
+          "bed": [
+            [
+              "chr20",
+              "10038301",
+              "10038647"
+            ],
+            [
+              "chr20",
+              "10043121",
+              "10043321"
+            ],
+            [
+              "chr20",
+              "10044393",
+              "10044543"
+            ],
+            [
+              "chr20",
+              "10045573",
+              "10045697"
+            ],
+            [
+              "chr20",
+              "10049389",
+              "10050212"
+            ],
+            [
+              "chr20",
+              "10051662",
+              "10051889"
+            ],
+            [
+              "chr20",
+              "10053111",
+              "10053275"
+            ],
+            [
+              "chr20",
+              "10054461",
+              "10054599"
+            ],
+            [
+              "chr20",
+              "10055501",
+              "10055660"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "sv_stage_test": {
+    "status": "complete",
+    "kind": "isolated real-data interface test; chr20-only reference and BAM; not a structural-variant accuracy benchmark",
+    "preparation": {
+      "purpose": "real-data SV stage interface test, not an accuracy benchmark",
+      "reference": "entire chr20 extracted from validated GRCh38 reference",
+      "bam": "original regional HG003 WGS BAM converted through SAM; keep chr20 alignments and chr20/unknown mates; keep only matching chr20 SQ header; exclude any record with SA tag on another chromosome",
+      "bam_sha256": "b99bb4d7b780ad6176fe67d1e2dc9aeeb5e5a664229749405b76f60ee93f2fab"
+    },
+    "workflow_sha256": "17ebb6e5eb1fbfcd75fb18ed6db2c320120ae366af3df9c0213b1ab73e2c6aa9",
+    "reference_chr20_sha256": "61eba5b05ef7d9ae5310e756c1143fa48072de3856d36871bb14e57aa2435ff3",
+    "final_vcf_sha256": "fa1f119f8113a2bc4fc4e9619b622ba02d8ab3a54bcfef876789eb233440c2dc",
+    "variant_records": 0,
+    "versions": {
+      "bwa": "0.7.19-r1273",
+      "tiddit": "3.9.5",
+      "bcftools": "1.23.1"
+    },
+    "cached_resume_completed_tasks": 3,
+    "trace_sha256": "8afe685b0216b82ede3489e961887bca473498a06837ad510ff17375f16ffe61"
+  },
+  "final_launcher_validation": {
+    "unit_tests_passed": 23,
+    "real_reference_dry_run": "passed (FAI names, lengths, byte offsets and line widths checked)",
+    "resume_against_earlier_implementation": "correctly rejected with exit 2 due code fingerprint mismatch; original completed manifest unchanged",
+    "resume_error": "ERROR: Resume inputs, references, workflow code, or analysis settings differ; use a new output directory",
+    "runtime_implementation_changes_after_calling_run": [
+      "Raised default requested memory from 32 to 96 GB; recorded integration used explicit 64 GB and remains accurately recorded",
+      "Added FAI byte offset and line-width verification",
+      "Added process-group cleanup on interruption and log-write failure, including SIGTERM-resistant descendants after their group leader exits; real-process regression reproduced the failure and passed after the fix",
+      "Archived prior run manifests/traces/reports on resume and tightened version check",
+      "Fixed supplemental TIDDIT raw publication and trace overwriting; supplemental workflow was independently rerun and resumed after these fixes"
+    ],
+    "scientific_caller_params_changed_after_integration": false
+  }
+}

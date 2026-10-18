@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "genome_build": "GRCh38",
+  "reference_fasta": "/resources/GRCh38/reference.fa",
+  "reference_sha256": "REPLACE_WITH_REAL_SHA256_OF_UNCOMPRESSED_FASTA",
+  "annotation": {
+    "vep_version": 116,
+    "vep_cache": "/resources/vep_cache",
+    "cache_manifest": "/resources/vep_cache.116.GRCh38.sha256",
+    "cache_manifest_sha256": "REPLACE_WITH_REAL_SHA256_OF_CACHE_MANIFEST",
+    "clinvar": {
+      "path": "/resources/clinvar/clinvar.GRCh38.vcf.gz",
+      "sha256": "REPLACE_WITH_REAL_SHA256",
+      "version": "REPLACE_WITH_EXACT_DATED_RELEASE",
+      "genome_build": "GRCh38",
+      "fields": ["CLNSIG", "CLNREVSTAT", "CLNDN"]
+    },
+    "gnomad": {
+      "path": "/resources/gnomad/gnomad.genomes.v4.1.sites.vcf.bgz",
+      "sha256": "REPLACE_WITH_REAL_SHA256",
+      "version": "4.1",
+      "genome_build": "GRCh38",
+      "fields": ["AF", "AC", "AN"]
+    }
+  }
+}

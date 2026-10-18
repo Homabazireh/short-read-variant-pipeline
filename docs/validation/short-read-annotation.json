@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "scope": "Public HG003 regional integration only; custom ClinVar and gnomAD files restricted to chr20 test intervals; full Ensembl116 cache used.",
+  "vep_version": "116.0",
+  "cache_manifest_sha256": "5ad5c9d0ab05e237ec488aa69c8ee8870ac41ddd3c59890d9a06d3ce6c1ba649",
+  "reference_sha256": "9cce8b926416dd96b152deea85188495b75f7ac8d634cc723a017067be8702b7",
+  "clinvar_version": "2026-10-11",
+  "clinvar_sha256": "586184624889a6c9d837ecb8e108d966d5c2e7ce802d01020aa9132d3bac0508",
+  "gnomad_version": "4.1-genomes",
+  "gnomad_sha256": "f5a7b104f4cd8c10cd53a943cc57a1985bd36ea0b72c13bc73b62b1fe1667560",
+  "outputs": [
+    {
+      "platform": "Illumina_WGS",
+      "sample": "HG003",
+      "label": "deepvariant",
+      "variant_type": "small",
+      "variants": 656,
+      "transcript_consequences": 14008,
+      "clinvar_status": {
+        "no_match": 13942,
+        "matched": 66
+      },
+      "gnomad_status": {
+        "matched": 13297,
+        "no_match": 711
+      },
+      "with_hgvsc": 12399,
+      "with_hgvsp": 18,
+      "with_mane_select": 79,
+      "vcf_sha256": "855ca754408e766e86f082620e26144f7c272ac419ee061c2c46b100d2887463",
+      "tsv_sha256": "0a6d93853836f3eaff1dc1d394542b4b2a6b0eb5f7613fdcff2381c7a7b8c745"
+    },
+    {
+      "platform": "Illumina_WES",
+      "sample": "HG003",
+      "label": "deepvariant",
+      "variant_type": "small",
+      "variants": 5,
+      "transcript_consequences": 124,
+      "clinvar_status": {
+        "no_match": 124
+      },
+      "gnomad_status": {
+        "matched": 124
+      },
+      "with_hgvsc": 118,
+      "with_hgvsp": 18,
+      "with_mane_select": 5,
+      "vcf_sha256": "c717e50d20d97f05e31a66880ad3dd0f84e621c64f1346888f77581312e29070",
+      "tsv_sha256": "7b0a12b885e3058d7e54689afd78f8570f1b1d0b5ce5077d0ff75d6fc8d9c1ed"
+    }
+  ]
+}

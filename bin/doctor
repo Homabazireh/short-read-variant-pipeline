@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+pipeline_root=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
+export PATH="${pipeline_root}/.tools:${PATH}"
+exec python3 "${pipeline_root}/scripts/doctor.py" "$@"

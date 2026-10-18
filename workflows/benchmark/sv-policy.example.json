@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "truvari_version": "5.3.0",
+  "truth_release": "REPLACE_WITH_EXACT_GRCH38_SV_TRUTH_RELEASE",
+  "release_instructions_url": "REPLACE_WITH_PRIMARY_RELEASE_INSTRUCTIONS_URL",
+  "rationale": "REPLACE_WITH_REVIEW_OF_RELEASE_INSTRUCTIONS_AND_JUSTIFICATION_OF_MATCHING_PARAMETERS",
+  "reference_sha256": "REPLACE_WITH_REAL_SHA256",
+  "truth_vcf_sha256": "REPLACE_WITH_REAL_SHA256",
+  "truth_bed_sha256": "REPLACE_WITH_REAL_SHA256",
+  "matching": {
+    "refdist": 500,
+    "pctseq": 0.7,
+    "pctsize": 0.7,
+    "pctovl": 0.0,
+    "sizemin": 50,
+    "sizefilt": 50,
+    "sizemax": -1,
+    "pick": "single",
+    "passonly": true,
+    "no_ref": "a",
+    "extend": 0,
+    "scope": "sequence_resolved_biallelic_INS_DEL"
+  }
+}
